@@ -4,8 +4,10 @@
 
 #form-section,
 #form-summary {
-  background-color: var(--info-background-color);
+  background-color: var(--color-head-bg);
   padding: 0;
+  color: #fffae2;
+  margin-block: auto;
 }
 #form-summary h2 {
   line-height: 3rem;
@@ -143,10 +145,19 @@ section {
 }
 
 .output div {
-  background: #f5f5f5;
-  background: var(--color-head-bg);
+  background: var(--color-card-bg);
   padding: 1rlh;
   border-radius: inherit;
   display: grid;
   gap: 0.5rlh;
+}
+.form1baggrund {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+}
+.form2baggrund {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
 }

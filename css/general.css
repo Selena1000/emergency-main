@@ -53,9 +53,10 @@ h1 {
 
 #instruction p {
   grid-column: 1/-1;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: var(--font-h2-size);
-  line-height: 1.5rem;
+  line-height: 2rem;
+  padding: 10px;
 }
 
 .sub {
@@ -140,4 +141,10 @@ nav a:active {
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+.hovedtekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
