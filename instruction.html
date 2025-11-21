@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/infographic.css" />
+    <link rel="stylesheet" href="css/klikbar.css" />
+    <link rel="stylesheet" href="css/togglebtn.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -25,6 +27,7 @@
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
+        <button class="toggleknap" id="toggle">Lys/Mørk tema</button>
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -34,8 +37,8 @@
     </header>
 
     <main>
-      <h1>INSTRUKTION</h1>
-      <p>Underoverskrift</p>
+      <h1>Hvordan så din nødssituation ud?</h1>
+      <p>Du er sent på den, congrats. Time to choose and hurry up</p>
       <section class="info-graphic">
         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 503.27 308.27">
           <defs>
@@ -467,6 +470,7 @@
           <path class="cls-32" d="M287.56,108.07c.41,2.22.62,4.48.61,6.75,0,.45-.01.91-.14,1.34-.15.51-.47.96-.79,1.4-.42.56-.85,1.1-1.31,1.62" />
           <path class="cls-32" d="M294.82,124.19c.09,1.08-.32,2.12-.54,3.18s-.22,2.29.54,3.06" />
           <line class="cls-40" x1="1.81" y1="2.34" x2="190.03" y2="162.46" />
+
           <g id="Seng">
             <polygon
               class="cls-12"
@@ -477,6 +481,7 @@
               points="411.04 124.32 424.35 121.7 435.65 121.7 435.65 131.52 433.03 147.74 430.21 154.39 425.33 162.44 412.49 177.07 400.8 189.41 395.46 194.9 387.45 206.2 384.84 215.35 389.51 234.96 365.69 229.9 359.64 212.06 361 201.18 361.46 194.53 369.58 181.51 386.01 167.82 397.65 158.55 405.75 148.87 408.88 137.84 408.88 127.41 411.04 124.32"
             />
           </g>
+
           <polygon class="cls-14" points="365.49 63.97 399.13 64.48 426.8 65.09 429.44 76.59 431.89 100.7 434.43 121.11 417.97 122.96 411.04 124.32 408.88 127.41 408.88 130.88 398.65 127.14 383.86 121.91 365.49 63.97" />
           <polygon
             class="cls-8"
@@ -568,12 +573,12 @@
         </svg>
       </section>
       <section class="info-text">
-        <h2>Overskrift</h2>
+        <h2>Nødssituation</h2>
         <article>
-          <p class="placeholder">INFO-TEKST</p>
+          <p id="infotext" class="placeholder">Vælg mellem dynen, telefonen eller kaffekoppen.</p>
         </article>
-        <aside id="efficiency" class="info-box">INFO-BOX</aside>
-        <aside id="requirement" class="info-box">INFO-BOX</aside>
+        <aside id="efficiency" class="info-box">---</aside>
+        <aside id="requirement" class="info-box">---</aside>
       </section>
     </main>
 
@@ -605,5 +610,6 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/toggle.js"></script>
   </body>
 </html>

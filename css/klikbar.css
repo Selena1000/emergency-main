@@ -1,0 +1,15 @@
+#kaffe:hover {
+  filter: brightness(150%);
+  filter: saturate(150%);
+  cursor: pointer;
+}
+#Seng:hover {
+  filter: brightness(120%);
+  filter: saturate(150%);
+  cursor: pointer;
+}
+#skrivebord:hover {
+  filter: brightness(120%);
+  filter: saturate(150%);
+  cursor: pointer;
+}

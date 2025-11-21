@@ -38,6 +38,47 @@ function handleSubmit(event) {
 
   form.reset();
 }
+if (form) {
+  form.addEventListener("invalid", cancelPopup, true);
+  form.addEventListener("submit", handleSubmit);
+}
+// Infographic
 
-form.addEventListener("invalid", cancelPopup, true);
-form.addEventListener("submit", handleSubmit);
+const kaffekop = document.querySelector("#kaffe");
+const infotext = document.querySelector("#infotext");
+const infobox1 = document.querySelector("#efficiency");
+const infobox2 = document.querySelector("#requirement");
+
+if (kaffekop) {
+  kaffekop.addEventListener("click", kaffeinformation);
+}
+
+function kaffeinformation() {
+  console.log("kaffeinformation");
+  infotext.textContent = "Få noget kaffe";
+  infobox1.textContent = "Kaffe gøre dig hyper, så sørg for du køber en kop kaffe med ekstra shots i!";
+  infobox2.textContent = "Kaffe er et krav for alle.";
+}
+
+const seng = document.querySelector("#Seng");
+
+if (seng) {
+  seng.addEventListener("click", senginformation);
+}
+function senginformation() {
+  console.log("senginformation");
+  infotext.textContent = "Sover du nok?";
+  infobox1.textContent = "Gå i seng tidligt og arbejd videre næste dag og evt. prioriter dine opgaver bedre";
+  infobox2.textContent = "Søvn er vigtigt for din hjerne og dit helbred, det er ikke værd at ødelægge det for lidt arbejde";
+}
+
+const skrivebord = document.querySelector("#skrivebord");
+if (skrivebord) {
+  skrivebord.addEventListener("click", skrivebordinformation);
+}
+function skrivebordinformation() {
+  console.log("skrivebordinformation");
+  infotext.textContent = "Ny alarm eller ny metode?";
+  infobox1.textContent = "Sæt flere alarmer til at stå tidligere op end normalt";
+  infobox2.textContent = "Sæt din alarm langt væk fra dig, så du er nødt til at stå op for at slukke den";
+}
