@@ -10,7 +10,11 @@
   padding: 0;
 }
 #form-info {
-  --color-head-bg: var(--color-headline-bg);
+  margin: 40px 0 20px 0;
+  padding: 15px 30px;
+  background-color: var(--color-head-bg);
+  color: var(--color-text-inverted);
+  font-size: var(--font-h3-size);
 }
 
 html {
