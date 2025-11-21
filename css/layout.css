@@ -12,6 +12,8 @@ main {
 }
 main > *:not(:first-child) {
   margin: 0 1rem;
+  background-color: #ff4b00;
+  background-color: var(--color-news-bg);
 }
 main {
   grid-template-rows: min-content min-content 1fr min-content;

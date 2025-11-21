@@ -1,0 +1,12 @@
+.toggleknap {
+  background-color: var(--color-link-bg);
+  color: var(--color-text);
+  font-size: var(--followup-text-size);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border-radius-links);
+  max-width: fit-content;
+}
+.toggleknap:hover {
+  background-color: var(--color-link-hover);
+}

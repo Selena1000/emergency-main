@@ -9,6 +9,9 @@
   margin: 0;
   padding: 0;
 }
+#form-info {
+  --color-head-bg: var(--color-headline-bg);
+}
 
 html {
   interpolate-size: allow-keywords;
@@ -29,10 +32,13 @@ li {
 img,
 svg {
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
-
+#forsentop {
+  width: fit-content;
+  height: 100%;
+}
 label {
   display: block;
 }

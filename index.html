@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/popover.css" />
+    <link rel="stylesheet" href="css/togglebtn.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -18,12 +20,13 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> <img src="img/logo.svg" class="logo.forside" /> </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
+        <button class="toggleknap" id="toggle">Lys/Mørk tema</button>
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -33,51 +36,90 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img src="img/vintagesent.png" id="icon" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>Er du for sent afsted?</h1>
+          <p class="sub">Læs mere for at komme afsted</p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="/forsentop.svg" alt="teaser_img" id="forsentop" />
           <div class="daily_text">
             <h2>Teaser</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima asperiores.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <!-- første teaser -->
+            <p>Instruction Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <!-- anden teaser -->
+          <img src="img/stress.png" alt="teaser_img" />
           <div class="daily_text">
             <h2>Teaser</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam ducimus ea, sed minima asperiores.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <a href="register.html" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
       <section id="breaking">
+        <!-- første breaking news -->
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="/forsentop.svg" alt="news_img" />
-          <button class="cta_btn" href="instruction.html" popovertarget="breaking1">Læs mere</button>
+          <img src="img/trætfreelancer.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover1">Læs mere</button>
+          <!-- popop vinduen herfra 1 -->
+          <div id="news_popover1" popover>
+            <button popovertarget="news_popover1">Luk</button>
+            <h4>Nyhedens overskrift</h4>
+            <time class="newsdate">14 november 2025 - kl. 12:28</time>
+            <img src="img/trætfreelancer.png" alt="news_img" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero necessitatibus, eligendi possimus exercitationem, ullam itaque expedita voluptate eaque praesentium voluptatem? Optio magnam animi, voluptatibus esse quibusdam
+              eaque veniam voluptatem!
+            </p>
+          </div>
         </article>
-        <div popover id="breaking1">fffffffff</div>
+
+        <!-- anden breaking news -->
         <article class="news_card">
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <button class="cta_btn" href="">Læs mere</button>
+          <img src="img/løbefterbus.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover2">Læs mere</button>
+          <!-- popop vinduen herfra 2 -->
+          <div id="news_popover2" popover>
+            <button popovertarget="news_popover2">Luk</button>
+            <h4>Nyhedens overskrift</h4>
+            <time class="newsdate">14 november 2025 - kl. 19:37</time>
+            <img src="img/løbefterbus.png" alt="news_img" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero necessitatibus, eligendi possimus exercitationem, ullam itaque expedita voluptate eaque praesentium voluptatem? Optio magnam animi, voluptatibus esse quibusdam
+              eaque veniam voluptatem!
+            </p>
+          </div>
         </article>
+
         <article class="news_card">
+          <!-- tredje breaking news -->
           <h3>Nyhed</h3>
           <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <button class="cta_btn" href="">Læs mere</button>
+          <img src="img/tomseng.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="news_popover3">Læs mere</button>
+          <!-- popop vinduen herfra 3 -->
+          <div id="news_popover3" popover>
+            <button popovertarget="news_popover3">Luk</button>
+            <h4>Nyhedens overskrift</h4>
+            <time class="newsdate">14 november 2025 - kl. 03:58</time>
+            <img src="img/tomseng.png" alt="news_img" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero necessitatibus, eligendi possimus exercitationem, ullam itaque expedita voluptate eaque praesentium voluptatem? Optio magnam animi, voluptatibus esse quibusdam
+              eaque veniam voluptatem!
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -110,6 +152,7 @@
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/toggle.js"></script>
   </body>
 </html>
 <!-- Du skal integrere din infografik i dit projekt på siden instruction.html
